@@ -3,7 +3,7 @@
 namespace Problems {
   class Program {
     static void Main() {
-      ISolve problem = new Problem5();
+      var problem = new Problem5();
       problem.Solve();
       Console.ReadKey();
     }

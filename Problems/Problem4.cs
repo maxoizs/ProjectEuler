@@ -2,7 +2,7 @@
 using System.Linq;
 
 namespace Problems {
-  public class Problem4: ISolve {
+  public class Problem4: ISolution {
     public string Description {
       get {
         return "A palindromic number reads the same both ways. "
