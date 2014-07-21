@@ -41,12 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problem5.cs" />
-    <Compile Include="Problem4.cs" />
-    <Compile Include="Problem3.cs" />
-    <Compile Include="Problem2.cs" />
+    <Compile Include="P5SmallestProduct.cs" />
+    <Compile Include="P4Palindromic.cs" />
+    <Compile Include="P3PrimeFactors.cs" />
+    <Compile Include="P2FibonaccirSequence.cs" />
     <Compile Include="ISolve.cs" />
-    <Compile Include="Problem1.cs" />
+    <Compile Include="P1Multileof3And5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
