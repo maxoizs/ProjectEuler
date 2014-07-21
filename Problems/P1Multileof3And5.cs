@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 namespace Problems {
-  public class Problem1: ISolution {
+  public class P1Multipleof3And5: ISolution {
     public string Description {
       get {
         return "If we list all the natural numbers below 10 that are multiples of 3 or 5,"
@@ -13,18 +14,18 @@ namespace Problems {
     }
 
     public void Solve() {
-      var maximum = 1000;
+      const int Maximum = 1000;
       var dividers = new List<int> { 3, 5 };
       var multiples = new List<int>();
 
-      for ( int x = 1; x < maximum; x++ ) {
+      for ( int x = 1; x < Maximum; x++ ) {
         if ( dividers.Any( number => x % number == 0 ) ) {
           multiples.Add( x );
         }
       }
 
       Console.WriteLine( Description );
-      Console.WriteLine( "Result is {0} ", multiples.Sum().ToString() );
+      Console.WriteLine( "Result is {0} ", multiples.Sum().ToString( CultureInfo.InvariantCulture ) );
     }
   }
 }
