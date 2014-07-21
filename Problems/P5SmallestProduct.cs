@@ -13,12 +13,13 @@ namespace Problems {
 
     public void Solve() {
       var dividers = GetDividers( 20 );
+      Console.WriteLine( Description );
+
       for ( var x = 1;; x++ ) {
         if ( dividers.Any( d => x % d != 0 ) ) {
           continue;
         }
 
-        Console.WriteLine( Description );
         Console.WriteLine( "Result is {0} ", x );
         return;
       }

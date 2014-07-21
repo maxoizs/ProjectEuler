@@ -13,10 +13,11 @@ namespace Problems {
 
     public void Solve() {
       const int Maximum = 999;
+      Console.WriteLine( Description );
+
       for ( var x = Maximum; x > 0; x-- ) {
         for ( var y = Maximum; y >= x; y-- ) {
           if ( IsPalindromic( x * y ) ) {
-            Console.WriteLine( Description );
             Console.WriteLine( "Result is {0} and {1} = {2} ", x, y, x * y );
             return;
           }
