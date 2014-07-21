@@ -13,16 +13,16 @@ namespace Problems {
     public void Solve() {
       const double Maximum = 600851475143;
       var factors = new List<double>();
-      getFactor( Maximum, factors );
+      GetFactor( Maximum, factors );
 
       Console.WriteLine( Description );
 
       Console.WriteLine( "Result is {0} ", factors.Max() );
     }
 
-    private static void getFactor( double Maximum, List<double> factors ) {
-      for ( var x = 2; x <= Maximum; x++ ) {
-        var result = Maximum / x;
+    private static void GetFactor( double maximum, List<double> factors ) {
+      for ( var x = 2; x <= maximum; x++ ) {
+        var result = maximum / x;
         if ( result != Math.Round( result ) ) {
           continue;
         }
@@ -35,7 +35,7 @@ namespace Problems {
           return;
         }
 
-        getFactor( result, factors );
+        GetFactor( result, factors );
         break;
       }
     }
