@@ -18,11 +18,12 @@ namespace Problems {
       const int Maximum = 4000000;
       var multiples = new List<double>();
       multiples.AddRange( new double[] { 1, 2 } );
+      Console.WriteLine( Description ); 
+      
       for ( var x = 1; multiples[x] + multiples[x - 1] < Maximum; x++ ) {
         multiples.Add( multiples[x] + multiples[x-1] );
       }
 
-      Console.WriteLine( Description );
       Console.WriteLine( "Result is {0} ", multiples.Where( number => number % 2 == 0 ).Sum() );
     }
   }

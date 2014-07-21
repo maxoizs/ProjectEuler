@@ -12,11 +12,11 @@ namespace Problems {
 
     public void Solve() {
       const double Maximum = 600851475143;
+      Console.WriteLine( Description ); 
+      
       var factors = new List<double>();
       GetFactor( Maximum, factors );
-
-      Console.WriteLine( Description );
-
+      
       Console.WriteLine( "Result is {0} ", factors.Max() );
     }
 

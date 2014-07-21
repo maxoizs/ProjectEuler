@@ -17,6 +17,7 @@ namespace Problems {
       const int Maximum = 1000;
       var dividers = new List<int> { 3, 5 };
       var multiples = new List<int>();
+      Console.WriteLine( Description );
 
       for ( int x = 1; x < Maximum; x++ ) {
         if ( dividers.Any( number => x % number == 0 ) ) {
@@ -24,7 +25,6 @@ namespace Problems {
         }
       }
 
-      Console.WriteLine( Description );
       Console.WriteLine( "Result is {0} ", multiples.Sum().ToString( CultureInfo.InvariantCulture ) );
     }
   }

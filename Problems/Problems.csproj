@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="P8PythagoreanTriplet.cs" />
     <Compile Include="P5SmallestProduct.cs" />
     <Compile Include="P4Palindromic.cs" />
     <Compile Include="P3PrimeFactors.cs" />
