@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Problems {
-  public class Problem1: ISolve {
+  public class Problem1: ISolution {
     public string Description {
       get {
         return "If we list all the natural numbers below 10 that are multiples of 3 or 5,"

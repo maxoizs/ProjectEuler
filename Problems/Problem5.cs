@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Problems {
-  public class Problem5: ISolve {
+  public class Problem5: ISolution {
     public string Description {
       get {
         return "2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder."
